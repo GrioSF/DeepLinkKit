@@ -33,6 +33,8 @@ typedef void(^DPLRouteCompletionBlock)(BOOL handled, NSError *error);
 
 @interface DPLDeepLinkRouter : NSObject
 
+//all routes the router can handle
+@property (nonatomic, strong) NSMutableOrderedSet *routes;
 
 ///-------------------------
 /// @name Route Registration
